@@ -1,0 +1,88 @@
+:root {
+    --primary-color: #2E7D32;
+    --secondary-color: #F5F5DC;
+    --accent-color: #FFD700;
+    --dark-color: #1B5E20;
+    --light-color: #FFFFFF;
+}
+
+body {
+    font-family: 'Noto Serif SC', 'Times New Roman', serif;
+    background-color: var(--secondary-color);
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: var(--dark-color) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans SC', sans-serif;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-color);
+    border-color: var(--dark-color);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.publication-item {
+    border-left: 3px solid var(--primary-color);
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.member-card {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.member-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid var(--primary-color);
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .member-card img {
+        width: 120px;
+        height: 120px;
+    }
+}
